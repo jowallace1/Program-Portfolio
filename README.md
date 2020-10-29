@@ -18,6 +18,12 @@ A repository containing any programs I developed for my thrust-vector-controlled
 
 **Simulation.slx** - This is a Simulink simulation that simulates my rocket's flight in 2 dimensions. It implements a PID controller that commands a motor mount angle in one axis.
 
+**RHInterp.m** - This program interpolates 5 relative humidity (RH) readings at various points in a humidity hood to fill in an RH map of the rest of the hood. This program was used to determine the effectiveness of the hood that provides a high-humidity reservoir to my lab's evaporation engines.
+
+**motionTracking.m** - This program tracks the rotation of a red dot around a blue dot. By placing a disk with such dots on the axle connected to my lab's evaporation engines, I was able to collect detailed rotation data of our engines.
+
+**maskTest.m** - This prorgram is for calibrating the color mask used in **motionTracking.m** to locate the red and blue dots.
+
 
 ## Python
 **catchData.py** - This program reads a serial port that my flight computer is connected to, printing the results. It was used to ensure data was being read properly.
