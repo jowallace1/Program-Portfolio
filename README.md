@@ -1,5 +1,5 @@
 # Program Portfolio
-A repository containing any programs I developed for my thrust-vector-controlled rocket project and my research work.
+A repository containing programs I developed for my thrust-vector-controlled rocket project and my research work. Some research-related programs have not been included because they will be published in an upcoming paper.
 
 ## Arduino
 **TVCTest.ino** - This is the current flight computer code. It collects data from the inertial measurement unit, altimeter and converts that to angles that are commanded to the motor mount servos in order to achieve a desired motor angle.
