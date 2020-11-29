@@ -16,9 +16,9 @@ A repository containing programs I developed for my thrust-vector-controlled roc
 
 
 ## Matlab & Simulink
-**F15TC.xlsx** - This is a table representing the thrust curve for the F15-0 motor I intend to use in my rocket. The data was retrieved from [thrustcurve.org](https://www.thrustcurve.org/motors/Estes/F15/) and is used in my Simulink simulation.
+**E12TC.xlsx** - This is a table representing the thrust curve for the E12-0 motor I intend to use in my rocket. The data was retrieved from [thrustcurve.org](https://www.thrustcurve.org/motors/Estes/E12/) and is used in my Simulink simulation.
 
-**ThrustCurve.m** - This program reads **F15TC.xlsx** so that it can be used in the simulation.
+**ThrustCurve.m** - This program reads **E12TC.xlsx** so that it can be used in the simulation.
 
 **Simulation.slx** - This is a Simulink simulation that simulates my rocket's flight in 2 dimensions. It implements a PID controller that commands a motor mount angle in one axis.
 
