@@ -2,7 +2,11 @@
 A repository containing programs I developed for my thrust-vector-controlled rocket project and my research work. Some research-related programs have not been included because they will be published in an upcoming paper.
 
 ## Arduino
-**TVCTest.ino** - This is the current flight computer code. It collects data from the inertial measurement unit, altimeter and converts that to angles that are commanded to the motor mount servos in order to achieve a desired motor angle.
+**HoldDown.ino** - This is the flight computer code used for the hold down tests. It includes updated orientation and pid control algorithms. Prior to the test, a button can be pressed to calibrate the orientation based on the gravity vector read by the flight computer's accelerometer. During the test, the orientation is determined based on gyroscope rates.
+
+**StateMachine.ino** - This the unfinished flight computer code, which runs a number of states based on the portion of flight the rocket is in (e.g. pad, powered ascent, unpowered ascent, descent, landed). This control system allows orientation to be calibrated based on the accelerometer on the launchpad, activate thrust-vector-control during powered ascent, eject the parachute at apogee, and download telemetry data from the flash chip to the sd card upon landing. I am currently writing code for many of these states.
+
+**TVCTest.ino** - This is the old flight computer code. It collects data from the inertial measurement unit, altimeter and converts that to angles that are commanded to the motor mount servos in order to achieve a desired motor angle.
 
 **fairingTest.ino** - This is the code that I use to test the third design of my fairing ejection mechanism. It simply alternates the fairing servo between 90 degrees and 0 degrees so the fairing can be loaded and subsequently ejected.
 
